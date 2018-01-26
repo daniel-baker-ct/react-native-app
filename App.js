@@ -5,12 +5,17 @@ import { StackNavigator } from 'react-navigation';
 import HomeScreen from './screens/HomeScreen/HomeScreen';
 import AboutScreen from './screens/AboutScreen/AboutScreen';
 import TabNavigator from 'react-navigation/src/navigators/TabNavigator';
+import LightListScreen from './screens/LightListScreen/LightListScreen';
 
 const AppRoot = TabNavigator(
   {
     Home: {
       screen: HomeScreen,
       navigationOptions: ({ navigation }) => ({ title: 'Home' }),
+    },
+    Lights: {
+      screen: LightListScreen,
+      navigationOptions: ({ navigation }) => ({ title: 'Lights' }),
     },
     About: {
       screen: AboutScreen,
